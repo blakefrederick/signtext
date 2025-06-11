@@ -1,10 +1,10 @@
 import TextSigner from '../components/TextSigner'
 import { headers } from 'next/headers'
 
-export default function Page() {
+export default async function Page() {
   let ip = null
   try {
-    const headersList = headers()
+    const headersList = await headers()
     ip = headersList.get('x-forwarded-for') || headersList.get('x-real-ip') || null
   } catch {}
   return (
