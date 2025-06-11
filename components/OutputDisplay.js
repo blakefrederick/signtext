@@ -10,20 +10,21 @@ export default function OutputDisplay({ value }) {
   return (
     <div className="relative mt-6">
       <textarea
-        className="w-full bg-transparent outline-none text-white border border-white/20 rounded-xl p-4 min-h-[120px] max-h-64 text-lg shadow-inner resize-none cursor-default select-all"
+        className="liquid-input w-full min-h-[120px] max-h-64 text-lg shadow-inner resize-none cursor-default select-all p-4"
         value={value}
         readOnly
         tabIndex={-1}
         aria-label="Signed output"
+        style={{fontFamily: 'inherit'}}
       />
       <button
         type="button"
         onClick={handleCopy}
-        className="absolute top-3 right-3 bg-white/20 text-white px-3 py-1 rounded-lg shadow hover:bg-white/30 active:scale-95 transition text-sm border border-white/30"
+        className="liquid-copy-btn absolute top-3 right-3 px-3 py-1 text-sm"
       >
         {copied ? 'Copied!' : 'Copy'}
       </button>
-      <div className="text-green-400 text-center mt-3 text-base font-medium drop-shadow">Your message has been signed and invisibly watermarked.</div>
+      <div className="text-black text-center mt-3 text-base font-medium drop-shadow">Your message has been signed and invisibly watermarked.</div>
     </div>
   )
 }

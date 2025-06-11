@@ -8,9 +8,9 @@ export default function Page() {
     ip = headersList.get('x-forwarded-for') || headersList.get('x-real-ip') || null
   } catch {}
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1a1a2e] to-[#16213e]">
-      <div className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl shadow-2xl p-8 w-full max-w-xl mx-4">
-        <h1 className="text-3xl font-bold text-white mb-6 text-center drop-shadow-lg">SignText</h1>
+    <main className="min-h-screen flex items-center justify-center">
+      <div className="liquid-glass p-8 w-full max-w-xl mx-4">
+        <h1 className="text-4xl font-extrabold text-center mb-6 tracking-tight text-[#232b5d] drop-shadow-lg" style={{fontFamily: 'SF Pro Display, San Francisco, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif', letterSpacing: '-0.01em'}}>SignText</h1>
         <TextSigner ip={ip} />
       </div>
     </main>
