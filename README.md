@@ -1,4 +1,4 @@
-<img width="508" alt="signtext1" src="https://github.com/user-attachments/assets/bf4d16a3-b74d-4f2b-8f8e-e7b0b3fd437b" />
+<img width="508" alt="signtext2" src="https://github.com/user-attachments/assets/faacaee9-61c6-42dd-8452-56a283d4db01" />
 <br/>
 <br/>
 https://signtext.vercel.app
